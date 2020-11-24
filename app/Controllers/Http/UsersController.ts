@@ -2,13 +2,14 @@ import User from 'App/Models/User'
 
 export default class UsersController {
   public async index({ response }) {
-    const user = await User.all()
-    response.status(200).json(user)
+    const users = await User.all()
+
+    return response.status(200).json(users)
   }
 
   public async store({ request, response }) {
     const user = await User.create(request.only(['name', 'email', 'password']))
-    response.status(200).json(user)
+    return response.status(200).json(user)
   }
 
   public async update({ params, request, response }) {
@@ -17,9 +18,11 @@ export default class UsersController {
     if (user) {
       user.merge(request.only(['name', 'email', 'password']))
       user.save()
+    } else {
+      return response.status(400).json({ error: 'User not found' })
     }
 
-    response.status(200).json(user)
+    return response.status(200).json(user)
   }
 
   public async destroy({ params, response }) {
@@ -27,8 +30,10 @@ export default class UsersController {
 
     if (user) {
       user.delete()
+    } else {
+      return response.status(400).json({ error: 'User not found' })
     }
 
-    response.status(200)
+    return response.status(200)
   }
 }

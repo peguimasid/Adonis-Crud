@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@adonisjs/assembler": "^3.0.0",
+    "@types/geoip-lite": "^1.4.0",
     "adonis-preset-ts": "^1.1.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
@@ -26,6 +27,8 @@
     "@adonisjs/core": "^5.0.4-preview-rc",
     "@adonisjs/lucid": "^9.0.3",
     "@adonisjs/repl": "^1.0.0",
+    "@adonisjs/view": "^3.0.8",
+    "geoip-lite": "^1.4.2",
     "luxon": "^1.25.0",
     "proxy-addr": "^2.0.6",
     "reflect-metadata": "^0.1.13",
