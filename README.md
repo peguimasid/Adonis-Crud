@@ -17,13 +17,29 @@ git clone https://github.com/peguimasid/Adonis-Crud.git
 
 ```sh
 yarn
-
-node ace build
-
-node ace migration:run
-
-node ace serve --watch
 ```
+
+
+Create a .env:
+ ```sh
+  PORT=3333
+  HOST=0.0.0.0
+  NODE_ENV=development
+  APP_KEY=YFfroMuy52FthjCknWB0rkO9aIfPbext
+  DB_CONNECTION=sqlite
+
+ ```
+ Run this:
+
+ ```sh
+  node ace invoke @adonisjs/lucid
+
+  node ace build
+
+  node ace migration:run
+
+  node ace serve --watch
+ ```
 
 ## Author
 
