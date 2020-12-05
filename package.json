@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "node ace build --production",
-    "start": "node server.js",
+    "start": "ENV_SILENT=true node server.js",
     "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
@@ -12,6 +12,7 @@
   "devDependencies": {
     "@adonisjs/assembler": "^3.0.0",
     "@types/geoip-lite": "^1.4.0",
+    "@types/url-parse": "^1.4.3",
     "adonis-preset-ts": "^1.1.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
@@ -33,6 +34,7 @@
     "pg": "^8.5.1",
     "proxy-addr": "^2.0.6",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.19",
+    "url-parse": "^1.4.7"
   }
 }
