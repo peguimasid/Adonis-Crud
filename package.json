@@ -11,7 +11,6 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^3.0.6",
     "@types/geoip-lite": "^1.4.0",
     "@types/url-parse": "^1.4.3",
     "adonis-preset-ts": "^1.1.0",
@@ -26,6 +25,7 @@
     "youch-terminal": "^1.0.1"
   },
   "dependencies": {
+    "@adonisjs/assembler": "^3.0.6",
     "@adonisjs/core": "^5.0.4-preview-rc",
     "@adonisjs/lucid": "^9.0.3",
     "@adonisjs/repl": "^1.0.0",
