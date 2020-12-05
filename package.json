@@ -5,6 +5,7 @@
   "scripts": {
     "build": "node ace build --production",
     "start": "ENV_SILENT=true node build/server.js",
+    "migrate": "node ace migration:run --force",
     "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
