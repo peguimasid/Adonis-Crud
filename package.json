@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "build": "node ace build --production",
-    "start": "ENV_SILENT=true node build/server.js",
+    "start": "ENV_SILENT=true node server.js",
     "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^3.0.0",
+    "@adonisjs/assembler": "^3.0.6",
     "@types/geoip-lite": "^1.4.0",
     "@types/url-parse": "^1.4.3",
     "adonis-preset-ts": "^1.1.0",
