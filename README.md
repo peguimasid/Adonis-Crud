@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> 🍬. Simple CRUD made with AdonisJS to pratice
+> 🍬. Simple CRUD made with AdonisJS to pratic
 
 ### 🏠 [Click here to see project in production](https://adonis-simple-crud.herokuapp.com/posts)
 
@@ -69,3 +69,4 @@ PG_DB_NAME=adonis_pg
 Give a ⭐️ if this project helped you!
 
 ***
+
