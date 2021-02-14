@@ -8,6 +8,7 @@
     "migrate:production": "cd build && node ace migration:run --force",
     "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
+    "unused": "unused script",
     "format": "prettier --write ."
   },
   "devDependencies": {
